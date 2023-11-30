@@ -1,0 +1,153 @@
+//---------------------------------------------------------------------------------------------
+"nl" Command:
+In Linux, the nl command is used to number lines in a file or standard input. It is a simple utility that is often used to number the lines of text files for better readability or as part of data processing in scripts.
+
+Options:
+
+    -b (--body-numbering): Specifies the line numbering style.
+        a (default): Number all lines.
+        t: Number only non-empty lines.
+        n: No line numbering.
+
+    -d (--section-delimiter): Specifies the section delimiter.
+
+    -f (--footer-numbering): Specifies the style for numbering footers.
+
+    -h (--header-numbering): Specifies the style for numbering headers.
+
+    -i (--line-increment): Specifies the line number increment.
+
+    -l (--join-blank-lines): Joins adjacent blank lines.
+
+    -n (--number-format): Specifies the line number format.
+
+    -p (--number-width): Specifies the line number width.
+
+    -s (--number-separator): Specifies the line number separator.
+
+    -v (--starting-line-number): Specifies the starting line number.
+
+    -w (--number-width): Specifies the line number width.
+
+    --help: Displays help information.
+
+    --version: Displays version information.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"pushd" Command:
+The pushd command in Linux is a built-in shell command that is used to change the current working directory and also push the current directory onto a stack so that it can be easily returned to later. It is commonly used in shell scripts and interactive command-line sessions to manage the directory stack.
+
+Options:
+
+    +N: Rotate the stack N times, making the Nth directory the new top.
+    -N: Rotate the stack N times, making the Nth directory the new bottom.
+
+Operation:
+
+    When pushd is invoked without any arguments, it swaps the top two directories on the stack.
+
+    If a directory is specified as an argument, it pushes the current directory onto the stack and changes to the specified directory.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"seq" Command:
+The seq command in Linux is used to generate a sequence of numbers. It is a simple utility that is often used in scripts or on the command line to generate numeric ranges or iterate over a sequence of numbers.
+
+Options:
+
+    -w, --equal-width: Equalize width by padding with leading zeroes.
+    
+    -s, --separator=STRING: Use STRING to separate numbers.
+    
+    -f, --format=FORMAT: Use printf-style floating-point FORMAT.
+    
+    -i, --increment=INCREMENT: Increment by INCREMENT instead of 1.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"shutdown" Command:
+The shutdown command in Linux is used to shut down or reboot the system. It is a powerful command that requires superuser privileges (root or using sudo). The shutdown command provides a way to gracefully stop the system, allowing users and applications to be notified and giving them time to save their work.
+
+Options:
+
+    -h (--halt): Halt the system.
+
+    -r (--reboot): Reboot the system.
+
+    -c (--cancel): Cancel a scheduled shutdown.
+
+    +TIME or now: Specify the time when the shutdown will occur.
+
+    -k (--kmsg): Print a wall message before shutting down (requires wall command).
+
+    -n (--no-wtmp): Do not write a shutdown record to the wtmp file.
+
+    -F (--force): Force immediate halt/reboot, ignore any pre-existing shutdown scripts.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"reboot" Command:
+The reboot command in Linux is used to restart the system. It is a simple and straightforward command that initiates the reboot process, causing the system to go through the shutdown sequence and then restart.
+
+Options:
+
+    -d (--no-wtmp): Do not write a reboot record to the wtmp file.
+
+    -f (--force): Force immediate reboot, ignore any pre-existing shutdown scripts.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"tee" Command:
+The tee command in Linux is used to read from standard input and write to standard output and files simultaneously. It is a simple utility that allows you to capture and redirect the output of a command or script to both the terminal and one or more files.
+
+Options:
+
+    -a (--append): Append to the given files rather than overwriting them.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"test" Command:
+The test command in Linux is used to evaluate conditional expressions in shell scripts or on the command line. It is also known as the [ command (yes, the left square bracket). The test command allows you to perform various tests on files, strings, and integers, returning a true or false result based on the evaluation of the specified condition.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"time" Command:
+The time command in Linux is used to measure the execution time of a command or script. It is often used to analyze the performance of programs and to identify bottlenecks. The time command provides information about the real time, user CPU time, and system CPU time consumed by a command.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"xargs" Command:
+The xargs command in Linux is used to build and execute command lines from standard input. It takes input from a pipe or from the output of a command and converts it into arguments for another command. xargs is particularly useful when you want to apply a command to a set of items or when dealing with command line length limitations.
+
+Options:
+
+    -0 (--null): Input items are terminated by a null character instead of whitespace. This is useful when dealing with filenames that may contain spaces.
+
+    -I REPLACE-STR (--replace=REPLACE-STR): Replace occurrences of REPLACE-STR in the initial arguments with items read from standard input.
+
+    -n NUM (--max-args=NUM): Use at most NUM arguments per command line.
+
+    -P MAX-PROCS (--max-procs=MAX-PROCS): Run up to MAX-PROCS processes at a time.
+//---------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+"strings" Command:
+The strings command in Linux is used to extract human-readable strings from binary files. It scans a binary file or an object file for sequences of printable characters and displays them on the standard output. This can be useful for examining binary files, libraries, or executables to identify embedded text or readable information.
+
+Options:
+
+    -a (--all): Scan the entire file, rather than stopping at the first null character.
+
+    -n NUM (--bytes=NUM): Display NUM characters of the string (default is 4).
+
+    -t (--radix): Display the offset of each string in hexadecimal.
+//---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
