@@ -1,0 +1,40 @@
+-----------------------------------------------------------------------------------------------
+Task4:
+On VM create users with their bash and home dir then add them to sudoers group then delete them
+
+* Create Users:
+-sudo adduser user1
+-sudo adduser user2
+
+* Add Users to the sudo Group:
+-sudo usermod -aG sudo user1
+-sudo usermod -aG sudo user2
+
+* Delete Users:
+-sudo deluser user1
+-sudo deluser user2
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+Task5:
+Mount flash and unmount the flash
+
+* Mount the flash drive:
+-sudo mount /dev/sdb1 /mnt/flash
+
+* Unmount the flash drive:
+-sudo umount /mnt/flash
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+Task6:
+Clear sdcard and write random values on the sdcard
+
+* Clearing an SD Card:
+-lsblk
+-sudo umount /dev/sdb1
+-sudo wipefs --all /dev/sdb
+
+* Writing Random Values to the SD Card:
+-sudo dd if=/dev/urandom of=/dev/sdb bs=4M status=progress
+-----------------------------------------------------------------------------------------------
